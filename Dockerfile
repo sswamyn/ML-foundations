@@ -1,6 +1,10 @@
 # Details of the base image are here: hub.docker.com/r/jupyter/scipy-notebook
 # Tag [29f53f8b9927] is latest image as of Apr 23, 2020 
 
+# docker pull jupyter/scipy-notebook
+
+#docker run -it -p 10000:8888 -v "${PWD}":/home/jovyan/work quay.io/jupyter/datascience-notebook:2024-12-23
+
 FROM jupyter/scipy-notebook:29f53f8b9927
 
 MAINTAINER Jon Krohn <jon@jonkrohn.com>
